@@ -18,7 +18,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['.eslintrc.cjs', 'tailwind.config.js', 'vite.config.ts', 'postcss.config.js'],
+      files: ['.eslintrc.cjs', 'tailwind.config.js', 'vite.config.ts', 'postcss.config.js', 'tsconfig.json'],
       parserOptions: {
         project: null,
       }
