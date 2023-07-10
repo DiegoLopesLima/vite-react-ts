@@ -1,33 +1,18 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Default() {
   return (
-    <div>
-      <header>
-        <h1>App</h1>
+    <div className="flex flex-col min-h-screen">
+      <Header />
 
-        <nav>
-          <h2>Navigation</h2>
-
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-      <main>
+      <main className="flex flex-col flex-1">
         <Outlet />
       </main>
 
-      <footer>
-        <small>All rights reserved.</small>
-      </footer>
+      <Footer />
     </div>
   )
 }

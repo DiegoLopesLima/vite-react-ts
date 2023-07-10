@@ -1,1 +1,11 @@
 @use 'tailwind';
+
+:root {
+  --body-bg: theme('colors.neutral.900');
+  --body-color: theme('colors.neutral.100');
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--body-color);
+}
