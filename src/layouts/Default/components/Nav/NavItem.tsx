@@ -1,8 +1,9 @@
 import { ReactNode } from "react";
-import { NavLink, To } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import classNames from "classnames";
 
 interface NavItemProps {
-  to: To;
+  to: string;
   children: ReactNode;
 }
 
@@ -11,7 +12,12 @@ export default function NavItem({ children, to }: NavItemProps) {
     <li>
       <NavLink
         to={to}
-        className={({ isActive }) => `${isActive ? 'bg-black bg-opacity-30' : ''} py-2 px-2.5 rounded-md text-sm`}
+        className={({ isActive }) => classNames([
+          'text-sm',
+          {
+            underline: isActive,
+          }
+        ])}
       >
         {children}
       </NavLink>

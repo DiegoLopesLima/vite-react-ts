@@ -8,7 +8,7 @@ interface NavBarProps {
 
 export default function NavBar({ children }: NavBarProps) {
   return (
-    <div className="bg-purple-800 py-2.5">
+    <div className="bg-neutral-600 py-2.5">
       <Container>
         <div className="flex gap-4 items-center">{ children }</div>
       </Container>

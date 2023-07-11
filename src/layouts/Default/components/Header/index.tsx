@@ -4,13 +4,13 @@ import NavBar from "../NavBar";
 export default function Header() {
   return (
     <header>
-      <h1 className="sr-only">App</h1>
+      <h1 className="sr-only">Me ve uma história!</h1>
 
       <NavBar>
         <Nav.List>
-          <Nav.Item to="/">Home</Nav.Item>
+          <Nav.Item to="/">Início</Nav.Item>
 
-          <Nav.Item to="/about">About</Nav.Item>
+          <Nav.Item to="/about">Sobre</Nav.Item>
         </Nav.List>
       </NavBar>
     </header>

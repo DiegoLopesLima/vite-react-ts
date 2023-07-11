@@ -14,7 +14,7 @@ export default function NavList({ children }: NavListProps) {
 
       <h2 className="sr-only">Navigation</h2>
 
-      <ul className="flex gap-2">
+      <ul className="flex gap-4">
         {children}
       </ul>
     </nav>
